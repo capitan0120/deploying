@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Subjects</title>
+</head>
+<body>
+  <h1>Subjects</h1>
+  <form method="get">
+    <input type="text" name="search" value="{{ search }}" placeholder="Search subject..."/>
+    <button type="submit">Search</button>
+  </form>
+  <ul>
+    {% for subject in subjects %}
+      <li>{{ subject.name }}</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
